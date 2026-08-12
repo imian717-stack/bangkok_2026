@@ -18,6 +18,8 @@ export interface Spot {
   modalLabel?: string;
   imageUrl?: string;
   menuUrl?: string;
+  boatModalKey?: string;
+  boatModalLabel?: string;
   isTransportCard?: boolean;
   hideCopyButton?: boolean;
 }

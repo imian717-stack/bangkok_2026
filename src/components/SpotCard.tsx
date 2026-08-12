@@ -223,6 +223,16 @@ export const SpotCard: React.FC<SpotCardProps> = ({ spot, index, onOpenModal }) 
             </button>
           )}
 
+          {spot.boatModalKey && (
+            <button
+              type="button"
+              onClick={() => onOpenModal(spot.boatModalKey!)}
+              className="boat-button inline-flex items-center gap-1.5 bg-[#E07A5F] hover:bg-[#C06C53] text-white text-[11px] font-jp-rounded font-bold px-3 py-1.5 rounded-xl transition-all active:scale-98 cursor-pointer shadow-2xs"
+            >
+              <span>{spot.boatModalLabel || '🚤 船班與到站順序'}</span>
+            </button>
+          )}
+
           {/* 複製名稱按鈕 (叫車/搜尋用 - 統一放置最右側) */}
           {!spot.hideCopyButton && (
             <button

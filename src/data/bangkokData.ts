@@ -78,6 +78,8 @@ export const bangkokItineraries: DayItinerary[] = [
         description: '風格潮流選物百貨公司購物商場，集結設計品牌與質感咖啡。',
         openingHours: '11:00–22:00',
         mapQuery: '1981 Soul and Sold Bangkok',
+        boatModalKey: 'canal-boat',
+        boatModalLabel: '🚤 船班與到站順序',
         transport: {
           summary: '交通：Breakfast Story Eleven >> 1981 Soul&Sold',
           steps: [
@@ -96,6 +98,8 @@ export const bangkokItineraries: DayItinerary[] = [
         openingHours: '10:00 - 19:00',
         note: '無展覽 | 可看外面庭園與建築',
         mapQuery: 'Dib Bangkok',
+        boatModalKey: 'canal-boat',
+        boatModalLabel: '🚤 船班與到站順序',
         transport: {
           summary: '交通：1981 Soul&Sold >> Dib Bangkok',
           steps: [
@@ -271,6 +275,8 @@ export const bangkokItineraries: DayItinerary[] = [
         description: '二次大戰老倉庫改建的選品、畫廊與咖啡空間，有Hay與一些生活用品選品店',
         openingHours: '11:00 - 20:00',
         mapQuery: 'Warehouse 30 Bangkok',
+        boatModalKey: 'chao-phraya-boat',
+        boatModalLabel: '⛵ 船班與到站順序',
         transport: {
           summary: '交通：K. Panich >> Warehouse 30',
           steps: [
@@ -295,6 +301,8 @@ export const bangkokItineraries: DayItinerary[] = [
         description: '位於嵩越路文青舊街區的特色傳統泰式風格餐館。',
         openingHours: '08:00 - 22:00',
         mapQuery: 'Ega Songwat Bangkok',
+        boatModalKey: 'chao-phraya-boat',
+        boatModalLabel: '⛵ 船班與到站順序',
         transport: {
           summary: '交通：TCDC >> Ega / Songwat',
           steps: [
@@ -470,7 +478,7 @@ export const arlTimetable: TimetableRow[] = [
   { trainNo: 'A-34', departure: '15:15', makkasan: '15:23', phayaThai: '15:41', direction: 'city-to-airport' },
   { trainNo: 'A-36', departure: '15:30', makkasan: '15:38', phayaThai: '15:56', direction: 'city-to-airport', isRecommended: true, note: '建議班次 (15:56 抵達)' },
   { trainNo: 'A-38', departure: '15:45', makkasan: '15:53', phayaThai: '16:11', direction: 'city-to-airport' },
-  { trainNo: 'A-40', departure: '16:00', makkasan: '16:08', phayaThai: '16:26', direction: 'city-to-airport', isRecommended: true, note: '⭐ 最晚建議班次 (16:26 抵達)' },
+  { trainNo: 'A-40', departure: '16:00', makkasan: '16:08', phayaThai: '16:26', direction: 'city-to-airport', isRecommended: true, note: '最晚建議班次 (16:26 抵達)' },
   { trainNo: 'A-42', departure: '16:15', makkasan: '16:23', phayaThai: '16:41', direction: 'city-to-airport' },
 ];
 
@@ -1028,6 +1036,141 @@ export const modalDataMap: Record<string, ModalContentData> = {
               </div>
               <span class="font-mono font-bold text-[#E07A5F] text-xs sm:text-sm shrink-0">95 THB</span>
             </div>
+          </div>
+        </div>
+      </div>
+    `,
+  },
+  'canal-boat': {
+    title: '🚤 空盛桑運河快艇到站順序 (Khlong Saen Saep Boat)',
+    contentHtml: `
+      <div class="space-y-4 text-xs font-sans text-[#3D352E]">
+        <div class="bg-[#EAF2EF] p-3 rounded-xl border border-[#81B29A] space-y-1">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-[#2D5A46] font-jp-title">🛶 空盛桑運河快艇 (Khlong Saen Saep Boat)</span>
+            <span class="text-[10px] bg-[#2D5A46] text-white font-bold px-2 py-0.5 rounded-full">運河線</span>
+          </div>
+          <p class="text-[11px] text-[#527364]">主要路線：Pratunam ↔ Wat Sriboonreung (票價約 ฿10–฿20)</p>
+        </div>
+
+        <div class="bg-white p-3 rounded-xl border border-[#E2D8C7] space-y-2">
+          <p class="font-bold text-xs text-[#3D352E] flex items-center gap-1 border-b border-[#F0EBE1] pb-1.5">
+            <span>⚓ 沿途停靠碼頭順序 (從上到下)：</span>
+          </p>
+
+          <div class="space-y-1.5 font-jp-body pl-1">
+            <div class="flex items-center gap-2 text-xs">
+              <span class="w-6 h-6 rounded-full bg-[#F4F7F4] text-[#536458] font-bold flex items-center justify-center text-[10px] shrink-0 border border-[#C2D4C8]">9</span>
+              <span class="text-[#536458]">Nana Nuea (9)</span>
+            </div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+
+            <div class="flex items-center gap-2 text-xs bg-[#E8F2EE] p-2 rounded-lg border border-[#81B29A]">
+              <span class="w-6 h-6 rounded-full bg-[#2D5A46] text-white font-bold flex items-center justify-center text-[10px] shrink-0 shadow-xs">10</span>
+              <div class="flex-1">
+                <span class="font-bold text-[#2D5A46]">Nana Chard (10)</span>
+                <span class="ml-2 text-[10px] bg-[#2D5A46] text-white px-1.5 py-0.5 rounded font-bold">🟢 上船點 (Day 2)</span>
+              </div>
+            </div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+
+            <div class="flex items-center gap-2 text-xs"><span class="w-6 h-6 rounded-full bg-[#F4F7F4] text-[#536458] font-bold flex items-center justify-center text-[10px] shrink-0 border border-[#C2D4C8]">11</span><span class="text-[#536458]">Saphan Asok (11)</span></div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+            <div class="flex items-center gap-2 text-xs"><span class="w-6 h-6 rounded-full bg-[#F4F7F4] text-[#536458] font-bold flex items-center justify-center text-[10px] shrink-0 border border-[#C2D4C8]">12</span><span class="text-[#536458]">Prasan Mit (12)</span></div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+            <div class="flex items-center gap-2 text-xs"><span class="w-6 h-6 rounded-full bg-[#F4F7F4] text-[#536458] font-bold flex items-center justify-center text-[10px] shrink-0 border border-[#C2D4C8]">13</span><span class="text-[#536458]">Ital-Thai (13)</span></div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+            <div class="flex items-center gap-2 text-xs"><span class="w-6 h-6 rounded-full bg-[#F4F7F4] text-[#536458] font-bold flex items-center justify-center text-[10px] shrink-0 border border-[#C2D4C8]">14</span><span class="text-[#536458]">Wat Mai Chong Lom (14)</span></div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+            <div class="flex items-center gap-2 text-xs"><span class="w-6 h-6 rounded-full bg-[#F4F7F4] text-[#536458] font-bold flex items-center justify-center text-[10px] shrink-0 border border-[#C2D4C8]">15</span><span class="text-[#536458]">Baan Don Mosque (15)</span></div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+            <div class="flex items-center gap-2 text-xs"><span class="w-6 h-6 rounded-full bg-[#F4F7F4] text-[#536458] font-bold flex items-center justify-center text-[10px] shrink-0 border border-[#C2D4C8]">16</span><span class="text-[#536458]">Thong Lo (16)</span></div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+            <div class="flex items-center gap-2 text-xs"><span class="w-6 h-6 rounded-full bg-[#F4F7F4] text-[#536458] font-bold flex items-center justify-center text-[10px] shrink-0 border border-[#C2D4C8]">17</span><span class="text-[#536458]">Charn Issara (17)</span></div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+
+            <div class="flex items-center gap-2 text-xs bg-[#F4F7F4] p-2 rounded-lg border border-[#52796F]">
+              <span class="w-6 h-6 rounded-full bg-[#52796F] text-white font-bold flex items-center justify-center text-[10px] shrink-0 shadow-xs">18</span>
+              <div class="flex-1">
+                <span class="font-bold text-[#2D5A46]">Vijit School (18)</span>
+                <span class="ml-2 text-[10px] bg-[#52796F] text-white px-1.5 py-0.5 rounded font-bold">🔵 下船點 (Dib Bangkok)</span>
+              </div>
+            </div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+
+            <div class="flex items-center gap-2 text-xs"><span class="w-6 h-6 rounded-full bg-[#F4F7F4] text-[#536458] font-bold flex items-center justify-center text-[10px] shrink-0 border border-[#C2D4C8]">19</span><span class="text-[#536458]">Klong Tan (19)</span></div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+
+            <div class="flex items-center gap-2 text-xs bg-[#E8F2EE] p-2 rounded-lg border border-[#2D5A46]">
+              <span class="w-6 h-6 rounded-full bg-[#2D5A46] text-white font-bold flex items-center justify-center text-[10px] shrink-0 shadow-xs">20</span>
+              <div class="flex-1">
+                <span class="font-bold text-[#2D5A46]">The Mall 3 (20)</span>
+                <span class="ml-2 text-[10px] bg-[#2D5A46] text-white px-1.5 py-0.5 rounded font-bold">🔴 下船點 (1981 Soul)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `,
+  },
+  'chao-phraya-boat': {
+    title: '⛵ 昭披耶河快艇到站順序 (Chao Phraya Boat - 橘旗)',
+    contentHtml: `
+      <div class="space-y-4 text-xs font-sans text-[#3D352E]">
+        <div class="bg-[#EBF3F7] p-3 rounded-xl border border-[#A8DADC] space-y-1">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-[#356859] font-jp-title">⛵ 昭披耶河快艇 (Chao Phraya Boat - 橘旗)</span>
+            <span class="text-[10px] bg-[#356859] text-white font-bold px-2 py-0.5 rounded-full">橘旗線</span>
+          </div>
+          <p class="text-[11px] text-[#457B9D]">航線：Nonthaburi ↔ Wat Rajsingkorn (固定船票約 ฿16)</p>
+        </div>
+
+        <div class="bg-white p-3 rounded-xl border border-[#E2D8C7] space-y-2">
+          <p class="font-bold text-xs text-[#3D352E] flex items-center gap-1 border-b border-[#F0EBE1] pb-1.5">
+            <span>⚓ 沿途停靠碼頭順序 (從上到下)：</span>
+          </p>
+
+          <div class="space-y-1.5 font-jp-body pl-1">
+            <div class="flex items-center gap-2 text-xs bg-[#EAF2EF] p-2 rounded-lg border border-[#81B29A]">
+              <span class="w-6 h-6 rounded-full bg-[#2D5A46] text-white font-bold flex items-center justify-center text-[9px] shrink-0 shadow-xs">N9</span>
+              <div class="flex-1">
+                <span class="font-bold text-[#2D5A46]">Tha Chang (N9)</span>
+                <span class="ml-2 text-[10px] bg-[#2D5A46] text-white px-1.5 py-0.5 rounded font-bold">🟢 上船點 (大皇宮)</span>
+              </div>
+            </div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+
+            <div class="flex items-center gap-2 text-xs"><span class="w-6 h-6 rounded-full bg-[#F4F7F4] text-[#536458] font-bold flex items-center justify-center text-[9px] shrink-0 border border-[#C2D4C8]">N8</span><span class="text-[#536458]">Tha Tian (N8)</span></div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+
+            <div class="flex items-center gap-2 text-xs"><span class="w-6 h-6 rounded-full bg-[#F4F7F4] text-[#536458] font-bold flex items-center justify-center text-[9px] shrink-0 border border-[#C2D4C8]">N7</span><span class="text-[#536458]">Rajinee (N7)</span></div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+
+            <div class="flex items-center gap-2 text-xs"><span class="w-6 h-6 rounded-full bg-[#F4F7F4] text-[#536458] font-bold flex items-center justify-center text-[9px] shrink-0 border border-[#C2D4C8]">N6</span><span class="text-[#536458]">Memorial Bridge (N6)</span></div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+
+            <div class="flex items-center gap-2 text-xs bg-[#F4F7F4] p-2 rounded-lg border border-[#52796F]">
+              <span class="w-6 h-6 rounded-full bg-[#52796F] text-white font-bold flex items-center justify-center text-[9px] shrink-0 shadow-xs">N5</span>
+              <div class="flex-1">
+                <span class="font-bold text-[#2D5A46]">Ratchawong (N5)</span>
+                <span class="ml-2 text-[10px] bg-[#52796F] text-white px-1.5 py-0.5 rounded font-bold">🔵 下船點 (Ega / Songwat)</span>
+              </div>
+            </div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+
+            <div class="flex items-center gap-2 text-xs"><span class="w-6 h-6 rounded-full bg-[#F4F7F4] text-[#536458] font-bold flex items-center justify-center text-[9px] shrink-0 border border-[#C2D4C8]">N4</span><span class="text-[#536458]">Marine Dept (N4)</span></div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+
+            <div class="flex items-center gap-2 text-xs bg-[#E8F2EE] p-2 rounded-lg border border-[#356859]">
+              <span class="w-6 h-6 rounded-full bg-[#356859] text-white font-bold flex items-center justify-center text-[9px] shrink-0 shadow-xs">N3</span>
+              <div class="flex-1">
+                <span class="font-bold text-[#2D5A46]">Si Phraya (N3)</span>
+                <span class="ml-2 text-[10px] bg-[#356859] text-white px-1.5 py-0.5 rounded font-bold">🔴 下船點 (Warehouse 30)</span>
+              </div>
+            </div>
+            <div class="text-[#81B29A] pl-2.5 text-[10px]">↓</div>
+
+            <div class="flex items-center gap-2 text-xs"><span class="w-6 h-6 rounded-full bg-[#E8F2EE] text-[#2D5A46] font-bold flex items-center justify-center text-[9px] shrink-0 border border-[#81B29A]">C</span><span class="text-[#2D5A46] font-bold">Sathorn (Central / 轉乘 BTS 鄭王橋)</span></div>
           </div>
         </div>
       </div>

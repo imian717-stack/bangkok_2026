@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+:root {
+  /* Japanese Youth Travel Journal Colors */
+  --jp-bg: #F8F5EE;
+  --jp-card-bg: #FFFFFF;
+  --jp-text: #3D352E;
+  --jp-subtext: #6E6359;
+
+  --jp-matcha: #6B9080;
+  --jp-matcha-light: #EAF2EF;
+
+  --jp-terracotta: #E07A5F;
+  --jp-terracotta-light: #FDF1ED;
+
+  --jp-butter: #F4A261;
+  --jp-butter-light: #FEF6EC;
+
+  --jp-cream: #F4F1DE;
+
+  --jp-soda: #457B9D;
+  --jp-soda-light: #EBF3F7;
+}
+
+body {
+  font-family: 'Zen Maru Gothic', 'Plus Jakarta Sans', 'Noto Sans TC', sans-serif;
+  background-color: #F8F5EE;
+  background-image: 
+    radial-gradient(#D5CBB8 0.75px, transparent 0.75px),
+    radial-gradient(#D5CBB8 0.75px, #F8F5EE 0.75px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+  color: #3D352E;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-jp-rounded {
+  font-family: 'Zen Maru Gothic', 'M PLUS Rounded 1c', 'Noto Sans TC', sans-serif;
+}
+
+.font-jp-title {
+  font-family: 'M PLUS Rounded 1c', 'Zen Maru Gothic', 'Noto Sans TC', sans-serif;
+}
+
+.font-jp-body {
+  font-family: 'Plus Jakarta Sans', 'Noto Sans TC', sans-serif;
+}
+
+/* Japanese Soft Card Shadow */
+.jp-card-shadow {
+  box-shadow: 0 10px 25px -5px rgba(61, 53, 46, 0.07), 0 3px 10px -2px rgba(61, 53, 46, 0.04);
+}
+
+.jp-card-shadow-sm {
+  box-shadow: 0 4px 12px -2px rgba(61, 53, 46, 0.06);
+}
+
+.jp-card-shadow-hover:hover {
+  box-shadow: 0 14px 28px -6px rgba(61, 53, 46, 0.1), 0 4px 12px -2px rgba(61, 53, 46, 0.06);
+  transform: translateY(-2px);
+}
+
+/* Washi Tape / Masking Tape Sticker Accents */
+.washi-tape-yellow {
+  background-color: rgba(244, 162, 97, 0.4);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.washi-tape-green {
+  background-color: rgba(107, 144, 128, 0.35);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.washi-tape-coral {
+  background-color: rgba(224, 122, 95, 0.35);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.washi-tape-blue {
+  background-color: rgba(69, 123, 157, 0.3);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Japanese Stamp Circle */
+.jp-stamp-badge {
+  border: 1.5px dashed #6B9080;
+  border-radius: 9999px;
+  background-color: #EAF2EF;
+  color: #2D5A46;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-3px) rotate(1.5deg);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-floatGentle {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+/* Hide summary arrow in details */
+details summary::-webkit-details-marker {
+  display: none;
+}

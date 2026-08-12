@@ -1,0 +1,6 @@
+{
+  "name": "曼谷旅遊行程 App",
+  "description": "泰國曼谷 4 天 3 夜精緻旅遊行程，包含語意化語法、交通折疊細節、Google 地圖導航、氣溫預報與交通工具箱",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

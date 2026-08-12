@@ -65,7 +65,7 @@ export const bangkokItineraries: DayItinerary[] = [
         description: '享用早午餐、鬆餅與咖啡。',
         openingHours: '07:00–23:00',
         menuUrl: 'https://www.breakfaststorybkk.com/menu',
-        mapQuery: 'Breakfast Story Phrom Phong Bangkok',
+        mapQuery: 'Breakfast Story Eleven Bangkok',
         transport: {
           summary: '交通：Vasu Exchange >> Breakfast Story Eleven',
           steps: ['🚶‍♂️ 步行 500m'],
@@ -79,7 +79,7 @@ export const bangkokItineraries: DayItinerary[] = [
         openingHours: '11:00–22:00',
         mapQuery: '1981 Soul and Sold Bangkok',
         transport: {
-          summary: '交通：Breakfast Story >> 1981 Soul&Sold',
+          summary: '交通：Breakfast Story Eleven >> 1981 Soul&Sold',
           steps: [
             '🚕 12:30 - 12:50 搭乘 Grab (約 ฿110) 至 Nana Chard 碼頭',
             '🚤 13:15 - 13:50 搭乘運河快艇 Khlong Saen Saep Express Boat (11 站：Nana Chard > The Mall 3 碼頭，船票 ฿19)',
@@ -216,14 +216,17 @@ export const bangkokItineraries: DayItinerary[] = [
         time: '23:00 -',
         title: '🍜 朱拉隆功夜市吃宵夜',
         description: '賽後前往熱門朱拉隆功夜市享用道地泰式美食宵夜。',
-        openingHours: '16:00 - 00:00',
         mapQuery: 'Chulalongkorn Night Market Bangkok',
+        transport: {
+          summary: '交通：泰拳體育館 >> 朱拉隆功夜市',
+          steps: ['🚕 搭乘 Grab (約 ฿87)'],
+        },
       },
       {
         id: 'spot-3-6',
         time: '',
         title: '🏨 回飯店 Miami Hotel',
-        description: '搭乘 Grab 或計程車返回 Miami Hotel 休息。',
+        description: '回飯店休息或彈性安排',
         mapQuery: 'Miami Hotel Bangkok',
       },
     ],
@@ -313,7 +316,7 @@ export const bangkokItineraries: DayItinerary[] = [
         id: 'spot-4-7',
         time: '20:30 -',
         title: '🏨 回飯店 Miami Hotel',
-        description: '搭乘 Grab 或計程車返回 Miami Hotel 休息。',
+        description: '回飯店休息或彈性安排',
         mapQuery: 'Miami Hotel Bangkok',
       },
     ],
@@ -367,6 +370,7 @@ export const bangkokItineraries: DayItinerary[] = [
         time: '14:50 - 16:00',
         title: '🚆 前往素萬那普機場 Suvarnabhumi Airport (BKK)',
         description: '領取行李後，搭乘大眾運輸直達 BKK 機場。',
+        mapQuery: 'Suvarnabhumi Airport Bangkok',
         transport: {
           summary: '交通：Terminal 21 >> BKK 機場',
           steps: [
@@ -380,7 +384,7 @@ export const bangkokItineraries: DayItinerary[] = [
       {
         id: 'spot-5-6',
         time: '16:00 - 20:00',
-        title: '🛬 BKK 機場辦理登機與託運 (20:00 起飛)',
+        title: '🛬 BKK機場辦理登機與託運',
         description: '辦理 Check-in、託運行李、退稅與機場巡禮。',
         note: '持JCB卡可以進G區 Miracle貴賓室',
       },
